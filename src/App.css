@@ -1,0 +1,112 @@
+body {
+  font-family: 'Press Start 2P', cursive; 
+  margin: 0;
+  padding: 0;
+  background-color: #87CEEB; 
+  color: #FFFFFF; 
+}
+
+
+.App {
+  max-width: 1200px;
+  margin: 20px auto; 
+  padding: 20px;
+  background: #222; 
+  border: 5px solid #FFD700; 
+  border-radius: 15px; 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+}
+
+
+h1 {
+  text-align: center;
+  color: #FF69B4; 
+  text-shadow: 2px 2px #FF4500; 
+  margin-bottom: 20px; 
+  font-size: 3em; 
+}
+
+
+.product-list {
+  display: grid; 
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+  gap: 15px; 
+}
+
+
+.product-item {
+  background: #444; 
+  border: 2px solid #FF4500; 
+  border-radius: 10px; 
+  padding: 15px; 
+  text-align: center; 
+  transition: transform 0.2s, box-shadow 0.2s; 
+  cursor: pointer; 
+  position: relative; 
+  overflow: hidden; 
+}
+
+.product-item:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 0 20px rgba(255, 69, 0, 0.7); 
+}
+
+
+.product-item img {
+  max-width: 100%; 
+  height: auto; 
+  border-radius: 8px; 
+  filter: grayscale(40%); 
+}
+
+
+.product-item::before {
+  content: '';
+  position: absolute;
+  top: -4px; 
+  left: -4px; 
+  right: -4px; 
+  bottom: -4px; 
+  border: 2px dashed #FFD700; 
+  pointer-events: none; 
+  z-index: 0; 
+}
+
+
+.product-detail {
+  margin-top: 20px; 
+  padding: 20px;
+  background: #444; 
+  border: 2px solid #FF4500; 
+  border-radius: 10px; 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+}
+
+
+.product-detail h2 {
+  color: #FF69B4; 
+  margin-bottom: 10px; 
+  font-size: 2.5em; 
+}
+
+
+.product-detail p {
+  margin: 5px 0; 
+  font-size: 1.2em; 
+}
+
+
+button {
+  background-color: #FF4500; 
+  border: none;
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s, transform 0.2s; 
+}
+
+button:hover {
+  background-color: #FF6347; 
+  transform: scale(1.05); 
+}
+
